@@ -24156,9 +24156,9 @@ cr.behaviors.Physics = function(runtime)
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Audio,
 	cr.plugins_.Button,
-	cr.plugins_.TextBox,
 	cr.plugins_.Spritefont2,
 	cr.plugins_.Text,
+	cr.plugins_.TextBox,
 	cr.plugins_.Sprite,
 	cr.behaviors.EightDir,
 	cr.behaviors.Physics,
@@ -24172,7 +24172,6 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.acts.SetLayerVisible,
 	cr.plugins_.Audio.prototype.acts.Play,
 	cr.plugins_.Button.prototype.cnds.OnClicked,
-	cr.plugins_.Audio.prototype.acts.StopAll,
 	cr.plugins_.Text.prototype.acts.SetX,
 	cr.plugins_.Sprite.prototype.exps.X,
 	cr.system_object.prototype.exps["float"],
@@ -24182,6 +24181,7 @@ cr.getObjectRefTable = function () { return [
 	cr.behaviors.Physics.prototype.cnds.CompareAngularVelocity,
 	cr.system_object.prototype.acts.Wait,
 	cr.system_object.prototype.acts.RestartLayout,
+	cr.plugins_.Audio.prototype.acts.StopAll,
 	cr.plugins_.TextBox.prototype.acts.SetInstanceVar,
 	cr.behaviors.Physics.prototype.acts.SetDensity
 ];};
